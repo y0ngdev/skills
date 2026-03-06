@@ -2,11 +2,15 @@
 
 ## Table of Contents
 
-- [Voice and Tone](#voice-and-tone)
-- [Article Structure](#article-structure)
-- [Content Patterns](#content-patterns)
-- [Formatting Conventions](#formatting-conventions)
-- [Example Openings](#example-openings)
+- [The Pragmatic Engineer Style Guide](#the-pragmatic-engineer-style-guide)
+	- [Table of Contents](#table-of-contents)
+	- [Voice and Tone](#voice-and-tone)
+	- [Article Structure](#article-structure)
+		- [Typical layout](#typical-layout)
+		- [Section length](#section-length)
+	- [Content Patterns](#content-patterns)
+	- [Formatting Conventions](#formatting-conventions)
+	- [Example Openings](#example-openings)
 
 ## Voice and Tone
 

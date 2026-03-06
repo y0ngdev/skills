@@ -1,11 +1,11 @@
 ---
 name: tech-article-writer
-description: Research, write, and review technical articles in the style of leading engineering publications (The Pragmatic Engineer, DigitalOcean, Better Stack). Use this skill when a user wants to write a technical blog post, tutorial, guide, deep-dive, or engineering article. Also use when the user asks to review or improve an existing technical article, match a specific publication's writing style, or create technical content that follows industry-standard formats.
+description: Research, write, and review technical articles in the style of leading engineering publications (The Pragmatic Engineer, DigitalOcean, Better Stack, Vultr Docs). Use this skill when a user wants to write a technical blog post, tutorial, guide, deep-dive, or engineering article. Also use when the user asks to review or improve an existing technical article, match a specific publication's writing style, or create technical content that follows industry-standard formats.
 ---
 
 # Tech Article Writer
 
-Write technical articles following the conventions of top engineering publications. Supports three styles: The Pragmatic Engineer (opinionated long-form analysis), DigitalOcean (step-by-step tutorials), and Better Stack (developer-focused guides with code-first examples).
+Write technical articles following the conventions of top engineering publications. Supports four styles: The Pragmatic Engineer (opinionated long-form analysis), DigitalOcean (step-by-step tutorials), Better Stack (developer-focused guides with code-first examples), and Vultr Docs (server/cloud tutorials with strict formatting rules).
 
 ## Workflow
 
@@ -25,7 +25,7 @@ Gather context before writing. Ask the user:
 
 1. What topic should the article cover?
 2. Who is the target audience? (junior devs, senior engineers, engineering managers, etc.)
-3. What style? (Pragmatic Engineer / DigitalOcean / Better Stack)
+3. What style? (Pragmatic Engineer / DigitalOcean / Better Stack / Vultr)
 4. Any specific points, data, or examples to include?
 5. Desired length? (Default: 2,000-3,000 words)
 
@@ -45,10 +45,12 @@ Based on the user's choice (or infer from context), load the matching style guid
 | **Pragmatic Engineer** | Opinion pieces, industry analysis, career advice, engineering culture         | [pragmatic-engineer-style.md](references/pragmatic-engineer-style.md) |
 | **DigitalOcean**       | Step-by-step tutorials, server setup, tool installation, how-to guides        | [digitalocean-style.md](references/digitalocean-style.md)             |
 | **Better Stack**       | Developer guides, best practices, tool comparisons, "complete guide" articles | [betterstack-style.md](references/betterstack-style.md)               |
+| **Vultr Docs**         | Server/cloud tutorials, infrastructure setup, Vultr platform guides           | [vultr-style.md](references/vultr-style.md)                           |
 
 **Selection heuristics** (when user doesn't specify):
 
 - Tutorial with specific commands/setup steps → DigitalOcean
+- Vultr platform, server/cloud infrastructure, or user mentions Vultr → Vultr Docs
 - Analysis of industry trends, company practices, or career topics → Pragmatic Engineer
 - Best practices guide, tool comparison, or "how to do X well" → Better Stack
 - If genuinely ambiguous, ask the user
@@ -73,6 +75,8 @@ Present the outline to the user for feedback before drafting. Revise until appro
 **DigitalOcean**: Start with Introduction + Prerequisites. Every content section is "Step N — [Gerund Phrase]". End with Conclusion + next steps.
 
 **Better Stack**: Lead sections with code examples. Include at least one comparison table. Group by concept, not sequence.
+
+**Vultr Docs**: Determine article vs guide. Start with Introduction + Prerequisites. Step sections use `## N. Title` format (number, period, space, title case). Use fenced code blocks with language lexer and `$` prompt prefix for commands. Include section summaries, verification steps, and Security section. End with Conclusion + Next Steps + More Information. No H1 in body.
 
 ## Phase 4: Draft
 

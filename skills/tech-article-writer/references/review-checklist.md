@@ -63,6 +63,36 @@ Apply the checks that match the target publication style:
 - [ ] Production-ready examples (error handling, env vars)
 - [ ] Developer-to-developer tone
 
+### Vultr Docs style
+- [ ] Determined content type: **article** (cloud-agnostic) or **guide** (Vultr-specific)
+- [ ] No H1 in body — all sections start at H2
+- [ ] Step headers use `## N. Title` format (title case)
+- [ ] Introduction: paragraph 1 introduces tool, paragraph 2 summarizes coverage
+- [ ] Prerequisites section present (neutral language for articles, Vultr links for guides)
+- [ ] Fenced code blocks with language lexer (` ```console `, ` ```python `, and so on)
+- [ ] `$` prompt prefix for user commands in console blocks
+- [ ] Output blocks use fenced code blocks without a language lexer
+- [ ] Section summaries: each section/subsection explains what the reader will do
+- [ ] Asterisks for bullet points, not hyphens
+- [ ] `1.` for all ordered list items (auto-numbered)
+- [ ] Oxford comma used consistently
+- [ ] Abbreviations: spelled out on first use, then abbreviated
+- [ ] No exclamation points anywhere
+- [ ] No Latin abbreviations (write out "for example," "that is," "and so on")
+- [ ] No "simple/simply/easy" language
+- [ ] US English only (no British spellings)
+- [ ] Active voice (passive only when system is actor or to avoid blaming user)
+- [ ] Task-focused language ("you will have a working X" not "you'll learn how to")
+- [ ] Implied subjects in instructions ("Edit the file" not "You need to edit the file")
+- [ ] Verification step after each major action
+- [ ] Security section included (when server-facing)
+- [ ] Conclusion section summarizing key outcomes
+- [ ] Meaningful link text (no "click here")
+- [ ] Images include alt text
+- [ ] "We" used only to refer to Vultr the company
+- [ ] Mandatory term substitutions applied (see vultr-style.md)
+- [ ] 1,500+ words for full payout
+
 ## Readability
 
 - [ ] **Paragraphs are short**: 2-4 sentences maximum.
